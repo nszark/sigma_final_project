@@ -1,0 +1,99 @@
+.successfulyDone {
+  background: var(--additional-bg-color);
+  padding-top: 80px;
+  padding-bottom: 250px;
+}
+.successfulyDone__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    text-align: center;
+    color: var(--title-color);
+    @include title;
+  }
+}
+.successfulyDone__card-block {
+  display: flex;
+  margin-top: 50px;
+
+  .successfulyDone__card-block_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    height: 182px;
+    background: var(--successfulyDone);
+    box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 40px 0px;
+    z-index: 2;
+    transition: scale 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      scale: 1.05;
+    }
+    h3 {
+      margin: 0;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 60px;
+      color: var(--title-color);
+    }
+    section {
+      color: var(--pre-title-color);
+      @include description;
+    }
+  }
+}
+.successfulyDone__card-block_card-even {
+  position: relative;
+  top: 70px;
+}
+.successfulyDone__card-block {
+  div:nth-child(2) {
+    width: 80px;
+    height: 100px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  div:nth-child(3) {
+    position: relative;
+    top: 100px;
+    width: 120px;
+    height: 75px;
+    border-bottom: 2px solid #e0e0e0;
+    border-left: 2px solid #e0e0e0;
+  }
+  :nth-child(5) {
+    position: relative;
+    top: 100px;
+    width: 50px;
+    height: 80px;
+    border-bottom: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+  }
+  :nth-child(6) {
+    position: relative;
+    bottom: 1px;
+    width: 100px;
+    height: 100px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  :nth-child(8) {
+    position: relative;
+    width: 60px;
+    height: 100px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  :nth-child(9) {
+    position: relative;
+    top: 100px;
+    width: 100px;
+    height: 80px;
+    border-left: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+  }
+}

@@ -1,0 +1,28 @@
+@import '../public/src/style/normalize.scss';
+@import '../public/src/style/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600&family=Raleway:wght@500&family=Volkhov:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600&family=Volkhov:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;700&family=Volkhov:wght@700&display=swap');
+@import '../public/src/style/header';
+@import '../public/src/style/modernInterior';
+@import '../public/src/style/whatWeDo';
+@import '../public/src/style/aboutUs';
+@import '../public/src/style/successfulyDone';
+@import '../public/src/style/testimonials';
+@import '../public/src/style/blog';
+@import '../public/src/style/form';
+@import '../public/src/style/footer';
+
+body {
+  height: 100vh;
+  @include Open-Sans-Bold;
+  background-color: var(--background-color);  
+  transition: background-color 300ms linear;
+  
+}
+
+._container {
+  max-width: 1560px;
+  margin: 0px auto;  
+  padding: 0 15px;
+}

@@ -1,0 +1,118 @@
+.testimonials__wrapper {
+  section {
+    margin-top: 100px;
+    text-align: center;
+    @include pre-title;
+    color: var(--pre-title-color);
+  }
+  h2 {
+    text-align: center;
+    @include title;
+    color: var(--title-color);
+    margin-bottom: 99px;
+  }
+}
+.testimonials {
+  height: 50vh;
+}
+.swiper-wrap {
+  position: relative;
+  width: 1400px;
+  height: 270px;
+  &:nth-child(odd) {
+    padding-top: 50px;
+  }
+}
+.cards_wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 650px;
+  height: 226px;
+}
+.testimonials__wrapper {
+  position: relative;
+}
+.testimonials_card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 571px;
+  height: 226px;
+  background: var(--bg-card-color);
+  box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+  border-radius: 70px 0px;
+  div {
+    img {
+      position: relative;
+      left: -65px;
+      border-radius: 40px 0;
+    }
+  }
+  &::after {
+    content: url("../../../public/src/icon/quotes.svg");
+    position: absolute;
+    top: 15px;
+    right: 34px;
+  }
+}
+.testimonials_card__description-block {
+  position: relative;
+  left: -35px;
+  width: auto;
+  padding: auto;
+  h6 {
+    margin: 0;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--title-color);
+    span {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: var(--description-color);
+    }
+  }
+  div {
+    @include description;
+    color: var(--description-color);
+  }
+}
+.button_block {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  right: 145px;
+  top: 160px;
+  button {
+    display: block;
+    width: 30px;
+    height: 29px;
+    background: #ffffff;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    img {
+      width: 10px;
+      height: 10px;
+      object-fit: cover;
+    }
+    &:hover {
+      background: #37806b;
+      box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+.next_button {
+  img {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,65 @@
+// colors
+@mixin Open-Sans-Bold {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #212121;
+}
+@mixin pre-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+@mixin title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 78px;
+}
+@mixin description {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+@mixin card-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+}
+@mixin card-description {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+html[data-theme="dark"] {
+  --button-text-color: #ffffff;
+  --bg-card-color: #3c463ba6;
+  --successfulyDone: #3c463b;
+  --title-color: #ffffff;
+  --description-color: #ffffff;
+  --pre-title-color: #ffffff;
+  --background-color: #000000da;
+  --additional-bg-color: #201616da;
+}
+html[data-theme="light"] {
+  --button-text-color: rgba(17, 17, 17, 1);
+  --bg-card-color: #ffffff;
+  --successfulyDone: #ffffff;
+  --description-color: #646464;
+  --title-color: #212121;
+  --pre-title-color: #646464;
+  --background-color: #ffffff;
+  --additional-bg-color: #f8f8f8;
+}

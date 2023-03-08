@@ -1,0 +1,91 @@
+.modern-interior__first-block {
+  margin-top: 600px;
+  margin-bottom: 200px;
+}
+.about-us__first-wrap {
+  gap: 15%;
+}
+.about-us__right {
+  min-width: 422px;
+  flex: 1;
+  span {
+    color: var(--pre-title-color);
+    @include pre-title;
+  }
+  h1 {
+    color: var(--title-color);
+    @include title;
+  }
+  div {
+    color: var(--pre-title-color);
+    @include description;
+  }
+  section {
+    position: relative;
+    top: 50px;
+  }
+}
+.about-us__left {
+  position: relative;
+  max-width: 703px;
+  min-width: 396.36px;
+  height: 613px;
+  padding-right: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  img {
+    border: 1px solid #000000;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 140px 0px;
+    z-index: 2;
+  }
+  div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 2px solid #b0855b;
+    border-radius: 140px 0px;
+    top: -650px;
+    right: 34.36px;
+    z-index: -1;
+  }
+}
+.about-us-second-block__left {
+  margin-top: 150px;
+  margin-bottom: 222px;
+  min-width: 510px;
+  max-width: 510px;
+  flex: 1;
+  position: relative;
+
+  .about-us-second-block-additional {
+    position: relative;
+    bottom: 60px;
+    width: 300px;
+
+    img {
+      width: 100%;
+    }
+  }
+  h1 {
+    color: var(--title-color);
+    @include title;
+    margin: 0;
+  }
+  div {
+    color: var(--pre-title-color);
+    @include description;
+  }
+}
+.about-us__design_element_1 {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+}
+.about-us__design_element_2 {
+  position: absolute;
+  top: 64%;
+  right: 0;
+  z-index: -1;
+}

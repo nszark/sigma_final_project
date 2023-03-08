@@ -1,0 +1,133 @@
+.what-we-do {
+  margin-top: 280px;
+  position: relative;
+  margin-bottom: 471px;
+}
+.what-we-do-button {
+  width: 206.67px;
+  height: 46.04px;
+  background: #37806b;
+  border-radius: 20px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0;
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #2d725e;
+  }
+}
+.what-we-do-button-active {
+  width: 206.67px;
+  height: 46.04px;
+  background: #ffffff;
+  color: #37806b;
+  border: 5px solid #37806b;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+.pre-title {
+  color: var(--pre-title-color);
+  @include pre-title;
+}
+.title {
+  color: var(--title-color);
+  @include title;
+  margin: 10px 0px 30px 0px;
+}
+.what-we-do__buttom-block {
+  display: flex;
+  gap: 6%;
+}
+.what-we-do__cards-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+  justify-content: center;
+  align-items: center;
+}
+.what-we-do__card {
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 90px;
+  width: 477.23px;
+  min-height: 164.57px;
+  height: auto;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+  border-radius: 60px 0px;
+  background-color: #caa892;
+  padding: 10px 10px 30px 0px;
+}
+.card-img {
+  position: relative;
+  top: 28px;
+  left: 38px;
+  flex: 0.8;
+}
+.card-block-right {
+  flex: 3;
+  position: relative;
+  top: 15px;
+}
+.card_title {
+  @include card-title;
+  color: #ffffff;
+}
+.card_description {
+  @include card-description;
+  color: #ffffff;
+}
+.what-we-do__cards-block-wh {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+  justify-content: center;
+  align-items: center;
+}
+.what-we-do__card-wh {
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 90px;
+  width: 477.23px;
+  min-height: 164.57px;
+  height: auto;
+  border-radius: 60px 0px;
+  background: var(--bg-card-color);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+  padding: 10px 10px 30px 0px;
+}
+.card-img-wh {
+  position: relative;
+  top: 28px;
+  left: 38px;
+  flex: 0.8;
+}
+.card-block-right-wh {
+  flex: 3;
+  position: relative;
+  top: 15px;
+}
+.card_title-wh {
+  @include card-title;
+  color: var(--title-color);
+}
+.card_description-wh {
+  @include card-description;
+  color: var(--description-color);
+}
+.what-we-do__design_element_-img {
+  position: absolute;
+  top: 105%;
+  right: 0;
+}
