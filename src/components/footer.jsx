@@ -22,13 +22,13 @@ function Footer() {
             </div>
           </Link>
           {/* Short description */}
-          <p>But i must explain to you all this mistaken <br/>idea of dencouncing pleasure.</p>
+          <p>But I must explain to you all this mistaken <br/>idea of denouncing pleasure.</p>
         </div>
         {/* Quick links section */}
         <ul className="footer__link-section">
           <li>Quick Links</li>
           <li>About Our Company</li>
-          <li>Services WE provide</li>
+          <li>Services we provide</li>
           <li>Career & Opportunity</li>
           <li>Privacy & policy</li>
           <li>Contact US</li>
@@ -40,7 +40,7 @@ function Footer() {
           <li>Our Testimonials</li>
           <li>Latest News</li>
           <li>Our misson</li>
-          <li>Get a free Quot</li>
+          <li>Get a free quote</li>
         </ul>
         {/* Contact information section */}
         <ul className="footer__link-section">
