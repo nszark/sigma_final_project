@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 
 function WhatWeDo() {
+  // Define the state using the useState hook
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
   const [count4, setCount4] = useState(0);
 
+  // Define event handlers for each option
   const handleclick1 = () => {
+    // Increment the count for option 1
     setCount1(count1 + 1);
+
+    // If option 1 was not previously selected, reset the counts of the other options to 0
     if (count1 === 0) {
       setCount2(0);
       setCount3(0);
@@ -15,7 +20,10 @@ function WhatWeDo() {
     }
   };
   const handleclick2 = () => {
+    // Increment the count for option 2
     setCount2(count2 + 1);
+
+    // If option 2 was not previously selected, reset the counts of the other options to 0
     if (count2 === 0) {
       setCount1(0);
       setCount3(0);
@@ -23,7 +31,10 @@ function WhatWeDo() {
     }
   };
   const handleclick3 = () => {
+    // Increment the count for option 3
     setCount3(count3 + 1);
+
+    // If option 3 was not previously selected, reset the counts of the other options to 0
     if (count3 === 0) {
       setCount2(0);
       setCount1(0);
@@ -31,7 +42,10 @@ function WhatWeDo() {
     }
   };
   const handleclick4 = () => {
+    // Increment the count for option 4
     setCount4(count4 + 1);
+
+    // If option 4 was not previously selected, reset the counts of the other options to 0
     if (count4 === 0) {
       setCount2(0);
       setCount1(0);
@@ -128,30 +142,39 @@ function WhatWeDo() {
   });
 
   return (
+    // "what-we-do" is the id of the section, "what-we-do__wrapper _container" and "what-we-do__wrap" are the classes of div elements.
     <div id="services" className="what-we-do">
       <div className="what-we-do__wrapper _container">
         <div className="what-we-do__wrap">
           <div className="pre-title">WHAT WE DO</div>
           <div className="title">Our Service</div>
           <div className="what-we-do__buttom-block">
+            {/* When the user clicks on the button, handleclick1 function will be executed.
+             If count1 equals to 1, set the class name to "what-we-do-button-active", otherwise, set it to "what-we-do-button". */}
             <button
               onClick={() => handleclick1()}
               className={count1 === 1 ? "what-we-do-button-active" : "what-we-do-button"}
             >
               ALL
             </button>
+            {/* When the user clicks on the button, handleclick2 function will be executed.
+             If count2 equals to 1, set the class name to "what-we-do-button-active", otherwise, set it to "what-we-do-button".*/}
             <button
               onClick={() => handleclick2()}
               className={count2 === 1 ? "what-we-do-button-active" : "what-we-do-button"}
             >
               INTERIOR DESIGN
             </button>
+            {/* When the user clicks on the button, handleclick3 function will be executed.
+             If count3 equals to 1, set the class name to "what-we-do-button-active", otherwise, set it to "what-we-do-button".*/}
             <button
               onClick={() => handleclick3()}
               className={count3 === 1 ? "what-we-do-button-active" : "what-we-do-button"}
             >
               ARCHITECTURE
             </button>
+            {/* When the user clicks on the button, handleclick4 function will be executed.
+             If count4 equals to 1, set the class name to "what-we-do-button-active", otherwise, set it to "what-we-do-button".*/}
             <button
               onClick={() => handleclick4()}
               className={count4 === 1 ? "what-we-do-button-active" : "what-we-do-button"}
@@ -160,12 +183,12 @@ function WhatWeDo() {
             </button>
           </div>
         </div>
-        {count1 === 0 &&
-         count2 === 0 &&
-         count3 === 0 &&
-         count4 === 0 && (
+        {/*If count1, count2, count3, and count4 are all 0, display the default content.*/}
+        {count1 === 0 && count2 === 0 && count3 === 0 && count4 === 0 && (
           <div className="what-we-do__cards-block-wh">
             {
+              // Display three cards with the information of the last three items in the JSON object.
+              // lastItems is an array of objects containing the src, title, and description of the last three items in the JSON object.
               <>
                 <div className="what-we-do__card-wh">
                   <div className="card-img-wh">
