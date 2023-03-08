@@ -1,0 +1,21 @@
+.randomUser__team{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  gap: 10px;
+  p {
+    @include description;
+  }
+}
+
+.randomUser__header {
+  text-align: center;
+  margin-bottom: 40px;
+  @include title;
+  line-height: 50px;
+  letter-spacing: 0.08em;
+  color: var(--title-color);
+}
